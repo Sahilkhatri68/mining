@@ -183,7 +183,7 @@ html {
 body {
   margin: 7px;
   padding: 20px 3px;
-  display: flex;
+  /* display: flex; */
 }
 /* body:before {
     content: "";
