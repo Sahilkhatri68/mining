@@ -16,7 +16,7 @@ export default function Preview() {
                                 <span></span>
                             </div>
                             <div className='item lang-item'>
-                            <a href="" className="en"></a>
+                                <a href="" className="en"></a>
                                 <a href="" className="ru"></a>
                                 <a href="" className="de"></a>
                                 <a href="" className="fr"></a>
@@ -44,8 +44,10 @@ export default function Preview() {
                             </a></Link>
                             <nav className='navMenu'>
                                 <ul>
-                                <li><Link to="/abstract"><a className='linknav'  >Abstract</a></Link></li>
-                                    <li><Link to="/preview"><a className='linknav'  >Preview</a></Link></li>
+                                    <li><Link to="/abstract"><a className='linknav'  >Abstract</a></Link></li>
+                                    <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
+
+                                    <li><Link to="/preview"><a className='linknav'  >Withdrawals</a></Link></li>
                                     <li><Link to="/about"><a className='linknav'  >About</a></Link></li>
                                     <li><Link to="/referal"><a className='linknav'  >Referal</a></Link></li>
                                     <li><Link to="/bonus"><a className='linknav'  >Bonus</a></Link></li>
@@ -60,18 +62,16 @@ export default function Preview() {
                         {/* main content of abstract page  */}
                         <div className="abstract-pageinfo">
                             <div className="info">
-                                <h1>Preview</h1>
-                                <p>Cryptocurrency cloud mining has been developed as a way to mine crypto by using
-                                    rented cloud computing power without having to deal with the technical know-how
-                                    of installing or running any hardware directly yourself. People can easily
-                                    participate in crypto mining by opening an account on a cloud mining service and
-                                    renting hash power for a minimal cost. As such, cloud mining companies have
-                                    made mining much more accessible and profitable for a wide group of people. </p>
-                                <p>Mining can be a tedious process that can be time-consuming and expensive for an
-                                    individual. Cloud mining services like TRON INFINITE make it easy for users to
-                                    break into the industry without having to deal with all the technical issues that
-                                    come with setting up their own mining farm. Cloud mining companies provide a
-                                    dashboard that makes the mining process extremely easy, with a few clicks. </p>
+                                <h1>Withdrawals</h1>
+                                <p> Minimal withdrawal is $10</p>
+                                <p> Maximum withdrawal is $1000</p>
+                                <p> Email verification before withdrawal</p>
+                                <p> Code authentication before a successful withdrawal (email)
+                                    (OTP)</p>
+                                <p> Every member can only withdraw 70% of profit you can
+                                    withdraw 100% once you have made $1000 team sales
+                                    If you cannot make 1000$ team sales at the end of the
+                                    60days the 30% funds becomes expired funds...</p>
 
                             </div>
                             <div className="img">
@@ -84,8 +84,8 @@ export default function Preview() {
             <footer>
                 <div className="info"><p>Copyright © 2022 TronMining</p></div>
                 <div className="link">
-                <Link to="/policy"> Privacy Policy</Link>
-                  <Link to="/terms">Terms & Conditioin</Link>
+                    <Link to="/policy"> Privacy Policy</Link>
+                    <Link to="/terms">Terms & Conditioin</Link>
                 </div>
             </footer>
         </div >

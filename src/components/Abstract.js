@@ -53,9 +53,11 @@ export default function Abstract() {
                       <a className="linknav">Abstract</a>
                     </Link>
                   </li>
+                  <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
+
                   <li>
                     <Link to="/preview">
-                      <a className="linknav">Preview</a>
+                      <a className="linknav">Withdrawals</a>
                     </Link>
                   </li>
                   <li>

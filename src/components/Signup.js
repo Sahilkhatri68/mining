@@ -5,7 +5,15 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Signup() {
-  const [name, setName] = useState("");
+  const [Name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+
+
+  const [gender, setGender] = useState("");
 
   async function GetData() {
     const resp = await axios
@@ -20,6 +28,29 @@ export default function Signup() {
   useEffect(() => {
     GetData();
   });
+
+  const handleReloading = (e) => {
+    e.preventDefault();
+    console.log("ok")
+  }
+
+  async function PostData() {
+    const res = await axios.post('https://61c59aa5c003e70017b797e7.mockapi.io/employee', {
+      Name: Name,
+      surname: surname,
+      username: username,
+      email: email,
+      phone: phone,
+      password: password,
+      gender: gender
+
+    }).then((res) => {
+      console.log(res.data);
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
+
 
   return (
     <div className="body">
@@ -57,7 +88,7 @@ export default function Signup() {
               }
             >
               <Link to="/">
-                {" "}
+
                 <a className="logo">
                   <p>Tron </p>
                   <span>.infinite</span>
@@ -106,7 +137,7 @@ export default function Signup() {
             </header>
             {/* main content of login page  */}
             <div className="loginpage">
-              <form method="post">
+              <form onSubmit={handleReloading}>
                 <input type="hidden" name="_token" />
                 <div className="field">
                   <label>Name</label>
@@ -114,7 +145,8 @@ export default function Signup() {
                     placeholder="Your name"
                     // id="login-email"
                     type="text"
-                    name="name"
+                    name={Name}
+                    onChange={(e) => setName(e.target.value)}
                     required
                   />
                 </div>
@@ -124,7 +156,8 @@ export default function Signup() {
                     placeholder="Your name"
                     // id="login-email"
                     type="text"
-                    name="surname"
+                    name={surname}
+                    onChange={(e) => setSurname(e.target.value)}
                     required
                   />
                 </div>
@@ -134,7 +167,8 @@ export default function Signup() {
                     placeholder="Your Username"
                     // id="login-email"
                     type="text"
-                    name="Username"
+                    name={username}
+                    onChange={(e) => setUsername(e.target.value)}
                     required
                   />
                 </div>
@@ -144,7 +178,8 @@ export default function Signup() {
                     placeholder="Your email"
                     id="login-email"
                     type="email"
-                    name="email"
+                    name={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -154,7 +189,8 @@ export default function Signup() {
                     placeholder="Your password"
                     id="login-password"
                     type="password"
-                    name="password"
+                    name={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div className="field">
@@ -163,14 +199,15 @@ export default function Signup() {
                     placeholder="Your Phone number"
                     // id="login-password"
                     type="text"
-                    name="Phone"
+                    name={phone}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="info">
                   <p>Thank for creating a new account</p>
                 </div>
-                <div className="btn">
-                  <button type="submit">
+                <div className="btn" onClick={() => PostData()}>
+                  <button  >
                     <span>
                       Create <br />
                       New account

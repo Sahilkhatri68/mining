@@ -45,7 +45,9 @@ export default function Bonus() {
                             <nav className='navMenu'>
                                 <ul>
                                     <li><Link to="/abstract"><a className='linknav'  >Abstract</a></Link></li>
-                                    <li><Link to="/preview"><a className='linknav'  >Preview</a></Link></li>
+                                    <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
+
+                                    <li><Link to="/preview"><a className='linknav'  >Withdrawals</a></Link></li>
                                     <li><Link to="/about"><a className='linknav'  >About</a></Link></li>
                                     <li><Link to="/referal"><a className='linknav'  >Referal</a></Link></li>
                                     <li><Link to="/bonus"><a className='linknav'  >Bonus</a></Link></li>
@@ -63,9 +65,9 @@ export default function Bonus() {
                                 <h1>Bonus Plans </h1>
                                 <p>Cryptocurrency cloud mining has been developed as a way to mine crypto by using
                                     rented cloud computing power without having to deal with the technical know-how
-                                 </p>
+                                </p>
                                 <p>3% daily on the profit made by direct down-line</p><br />
-                                <p>1.Attain 1000$ team sales and qualify to earn 3.5% of 1000 monthly</p> 
+                                <p>1.Attain 1000$ team sales and qualify to earn 3.5% of 1000 monthly</p>
                                 <p>2.Attain 2000$ team sales and qualify to earn 4% of 2000$ monthly</p>
                                 <p>3.Attain 5000$ team sales and qualify to earn 4.5% of 5000$ monthly</p>
                                 <p>4.Attain 10000$ team sales and qualify to earn 5% of 10000$ monthly</p>
@@ -84,8 +86,8 @@ export default function Bonus() {
             <footer>
                 <div className="info"><p>Copyright © 2022 TronMining</p></div>
                 <div className="link">
-                <Link to="/policy"> Privacy Policy</Link>
-                  <Link to="/terms">Terms & Conditioin</Link>
+                    <Link to="/policy"> Privacy Policy</Link>
+                    <Link to="/terms">Terms & Conditioin</Link>
                 </div>
             </footer>
         </div >
