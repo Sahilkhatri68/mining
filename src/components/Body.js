@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Button } from '@mui/material';
 export default function Body() {
-  
+
     return (
         <div className='body'>
             <div className='main'>
@@ -32,6 +32,29 @@ export default function Body() {
                         </div>
                     </aside>
                     <section className='maincontent'>
+                        {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> */}
                         <header style={{
                             // padding: 30,
                             // display: "flex",
@@ -63,6 +86,7 @@ export default function Body() {
                                 <Link className='signup' to="/signup">Signup</Link>
                                 <span className="mobilMenu"><i></i></span>
                             </div>
+
                         </header>
                         <section className='home-firstBlock'>
                             <div className='content'>

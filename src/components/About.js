@@ -16,7 +16,7 @@ export default function About() {
                                 <span></span>
                             </div>
                             <div className='item lang-item'>
-                            <a href="" className="en"></a>
+                                <a href="" className="en"></a>
                                 <a href="" className="ru"></a>
                                 <a href="" className="de"></a>
                                 <a href="" className="fr"></a>
@@ -44,14 +44,14 @@ export default function About() {
                             </a></Link>
                             <nav className='navMenu'>
                                 <ul>
-                                <li><Link to="/abstract"><a className='linknav'  >Abstract</a></Link></li>
-                                <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
+                                    <li><Link to="/abstract"><a className='linknav'  >Abstract</a></Link></li>
+                                    <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
 
                                     <li><Link to="/preview"><a className='linknav'  >Withdrawals</a></Link></li>
                                     <li><Link to="/about"><a className='linknav'  >About</a></Link></li>
                                     <li><Link to="/referal"><a className='linknav'  >Referal</a></Link></li>
                                     <li><Link to="/bonus"><a className='linknav'  >Bonus</a></Link></li>
-                  <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                                    <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
 
                                 </ul>
                             </nav>
@@ -65,6 +65,14 @@ export default function About() {
                         <div className="abstract-pageinfo">
                             <div className="info">
                                 <h1>About</h1>
+                                <p>
+                                    Mining stops automatically after a user earns 300%
+                                    Every registration package becomes points that qualifies for
+                                    a Dubai Trip of $20k and $60k respectively
+                                    All earnings of investors come from both referral
+                                    bonus,monthly earnings and daily ROI make up the total of
+                                    300% for all the investors                                </p>
+
                                 <p>Tron Infinite was micro-launched on local host in 2018 and is one of the leading
                                     TRX cloud mining service providers. The purpose of this company is to maximize
                                     the interests of each user, so they can leverage large wealth with relatively low
@@ -95,8 +103,8 @@ export default function About() {
             <footer>
                 <div className="info"><p>Copyright © 2022 TronMining</p></div>
                 <div className="link">
-                <Link to="/policy"> Privacy Policy</Link>
-                  <Link to="/terms">Terms & Conditioin</Link>
+                    <Link to="/policy"> Privacy Policy</Link>
+                    <Link to="/terms">Terms & Conditioin</Link>
                 </div>
             </footer>
         </div >
