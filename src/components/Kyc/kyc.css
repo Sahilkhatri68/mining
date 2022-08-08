@@ -78,6 +78,11 @@
     }
 }
 
+.maxl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .register-left p {
     font-weight: lighter;
     padding: 12%;
