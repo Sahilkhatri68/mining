@@ -330,6 +330,9 @@ main {
   -webkit-transition: left 0.25s linear, right 0.25s linear;
   transition: left 0.25s linear, right 0.25s linear;
 }
+.maincontent{
+  width: 100%;
+}
 .body-content aside.sidebar > div.lang > div.lang-btn span:before {
   top: -6px;
   left: 0;
