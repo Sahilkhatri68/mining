@@ -51,6 +51,8 @@ export default function Privacypolicy() {
                                     <li><Link to="/about"><a className='linknav'  >About</a></Link></li>
                                     <li><Link to="/referal"><a className='linknav'  >Referal</a></Link></li>
                                     <li><Link to="/bonus"><a className='linknav'  >Bonus</a></Link></li>
+                                    <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+
                                 </ul>
                             </nav>
                             <div className='form-button'>

@@ -101,9 +101,11 @@ export default function Signup() {
                       <a className="linknav">Abstract</a>
                     </Link>
                   </li>
+                  <li><Link to="/mining"><a className='linknav'  >Mining</a></Link></li>
+
                   <li>
                     <Link to="/preview">
-                      <a className="linknav">Preview</a>
+                      <a className="linknav">Withdrawals</a>
                     </Link>
                   </li>
                   <li>
@@ -121,6 +123,8 @@ export default function Signup() {
                       <a className="linknav">Bonus</a>
                     </Link>
                   </li>
+                  <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+
                 </ul>
               </nav>
               <div className="form-button">

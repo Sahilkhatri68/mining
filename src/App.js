@@ -15,6 +15,7 @@ import Bonus from './components/Bonus';
 import Privacypolicy from './components/Privacypolicy';
 import Termsandcondition from './components/Termsofuse';
 import Mining from './components/Mining';
+import Kyc from './components/Kyc/Kyc';
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
         <Route path="/bonus" element={<Bonus />} />
         <Route path="/policy" element={<Privacypolicy />} />
         <Route path="/terms" element={<Termsandcondition />} />
+        <Route path="/kyc" element={<Kyc />} />
       </Routes>
 
     </div>
