@@ -1,6 +1,8 @@
 import React from "react";
 import "./bodypart.css";
 import "./mining.css"
+import minetron from "../images/mine-tron.jpg";
+import trx from "../images/trx.jpg";
 import { Routes, Route, Link } from "react-router-dom";
 export default function Mining() {
     // const name = "Harsh"
@@ -134,26 +136,42 @@ export default function Mining() {
 
                             </div>
                             <div className="rightattain">
-                                <p   className="paraattain" style={{marginBottom:20,fontSize:20}}>1.Attain $1000 team sales and qualify to earn 3.20% of $1000
-                                    monthly
-                                </p>
-                                <p  className="paraattain"  style={{marginBottom:20,fontSize:20}}>2.Attain $2000 team sales and qualify to earn 4% of $2000
-                                    monthly
-                                </p>
-                                <p  className="paraattain"  style={{marginBottom:20,fontSize:20}}>3.Attain $5000 team sales and qualify to earn 4.5% of $5000
-                                    monthly
-                                </p>
-                                <p  className="paraattain"  style={{marginBottom:20,fontSize:20}}>4.Attain $10000 team sales and qualify to earn 5% of $10000
-                                    monthly
-                                </p>
-                                <p  className="paraattain"  style={{marginBottom:20,fontSize:20}}>5.Attain $20000 team sales and qualify for a Dubai trip =$2000
-                                </p>
-                                <p   className="paraattain" style={{marginBottom:20,fontSize:20}}>5.Attain $50000 team sales and qualify become a share holder
-                                </p>
-                               
+
+                                <img src={minetron} className="minetron"></img>
+
+
                             </div>
 
                         </div>
+                        <div className="abstract-pageinfo">
+                            <div className="leftattain">
+
+                                <img src={trx} className="minetron"></img>
+                            </div>
+                            <div className="emtyspace">
+
+                            </div>
+                            <div className="rightattain">
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>1. Attain 1000$ team sales and qualify to earn 3.5% of 1000
+                                    monthly</p>
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>2. Attain 2000$ team sales and qualify to earn 4% of 2000$
+                                    monthly</p>
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>
+                                    3. Attain 5000$ team sales and qualify to earn 4.5% of
+                                    5000$ monthly</p>
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>4. Attain 10000$ team sales and qualify to earn 5% of
+                                    10000$ monthly</p>
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>5. Attain 20000$ team sales and qualify for A Dubai
+                                    Trip=$2000</p>
+                                <p style={{ marginBottom: 20, fontSize: 18 }}>6. Attain 50000$ team sales and qualify become a share
+                                    holders</p>
+
+
+
+                            </div>
+
+                        </div>
+
                     </section>
                 </section>
             </div>
