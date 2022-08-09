@@ -3,6 +3,7 @@ import React from "react";
 import "./kyc.css"
 
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BiUserCircle } from 'react-icons/bi';
 import { TbHome } from 'react-icons/tb';
 import { Routes, Route, Link } from "react-router-dom";
 export default function Abstract() {
@@ -81,6 +82,10 @@ export default function Abstract() {
                                     </li>
                                     <li>
                                         <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
+
+                                    </li>
+                                    <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
 
                                     </li>
 

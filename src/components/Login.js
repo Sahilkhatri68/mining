@@ -8,6 +8,8 @@ import {
 
 } from "react-router-dom";
 import Swal from "sweetalert2"
+import { BiUserCircle } from 'react-icons/bi';
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb'
 import axios from 'axios';
@@ -121,6 +123,10 @@ export default function Login() {
                   <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
 
                 </ul>
+                <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
+                                    </li>
               </nav>
               <div className="form-button">
                 <Link className="login" to="/login">

@@ -5,6 +5,7 @@ import {
     Route,
     Link,
 } from "react-router-dom";
+import { BiUserCircle } from 'react-icons/bi';
 
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb';
@@ -55,6 +56,10 @@ export default function Bonus() {
                                     <li><Link to="/referal"><a className='linknav'  >Referal</a></Link></li>
                                     <li><Link to="/bonus"><a className='linknav'  >Bonus</a></Link></li>
                                     <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                                    <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
+                                    </li>
 
                                 </ul>
                             </nav>

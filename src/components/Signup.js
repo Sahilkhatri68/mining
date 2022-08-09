@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2"
+import { BiUserCircle } from 'react-icons/bi';
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb';
 export default function Signup() {
@@ -136,6 +138,10 @@ export default function Signup() {
                     </Link>
                   </li>
                   <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                  <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
+                                    </li>
 
                 </ul>
               </nav>

@@ -5,6 +5,8 @@ import minetron from "../images/mine-tron.jpg";
 import trx from "../images/trx.jpg";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb';
+import { BiUserCircle } from 'react-icons/bi';
+
 import { Routes, Route, Link } from "react-router-dom";
 export default function Mining() {
     // const name = "Harsh"
@@ -81,6 +83,10 @@ export default function Mining() {
                                         </Link>
                                     </li>
                                     <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                                    <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
+                                    </li>
 
                                 </ul>
                             </nav>

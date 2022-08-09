@@ -614,6 +614,15 @@ body::-webkit-scrollbar-track {
   height: 25px;
 }
 
+.usercirclediv {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  margin-top: 2px;
+  color: green;
+}
+
 @media(max-width:1070px) {
   .dropbtn {
     display: block;

@@ -1,6 +1,8 @@
 import React from "react";
 import "../bodypart.css";
 import "./userprofile.css"
+import { BiUserCircle } from 'react-icons/bi';
+
 import { Routes, Route, Link } from "react-router-dom";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb';
@@ -85,6 +87,10 @@ export default function Userprofile() {
                                         </Link>
                                     </li>
                                     <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                                    <li>
+                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
+                                    </li>
 
                                 </ul>
                             </nav>
