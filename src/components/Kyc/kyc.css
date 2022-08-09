@@ -2,7 +2,7 @@
     /* background-image: linear-gradient(to top, #a9e963, #8ad95d, #6ac957, #47b852, #11a84e); */
     margin-top: 3%;
     padding: 3%;
-    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab, #c0ebd1, #11a84e);
+    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab, #c0ebd1, #11a84e,#8ac2b0);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     /* height: 100vh; */
