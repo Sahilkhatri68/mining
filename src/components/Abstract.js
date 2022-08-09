@@ -104,6 +104,8 @@ export default function Abstract() {
                     <Link to="/referal"><a className='linknav'  >Referal</a></Link>
                     <Link to="/bonus"><a className='linknav'  >Bonus</a></Link>
                     <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
+                    <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+
                   </div>
                 </div>
               </div>
