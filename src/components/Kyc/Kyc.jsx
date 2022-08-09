@@ -1,6 +1,9 @@
 import React from "react";
 // import "./bodypart.css";
 import "./kyc.css"
+
+import { AiOutlineMenu } from 'react-icons/ai';
+import { TbHome } from 'react-icons/tb';
 import { Routes, Route, Link } from "react-router-dom";
 export default function Abstract() {
     // const name = "Harsh"
@@ -12,7 +15,7 @@ export default function Abstract() {
                     <aside className="sidebar">
                         <div className="lang">
                             <div className="lang-btn active">
-                                <span></span>
+                                <TbHome className='homeiconn' />
                             </div>
                             <div className="item lang-item">
                                 <a href="" className="en"></a>
@@ -85,9 +88,18 @@ export default function Abstract() {
                                 <Link className="signup" to="/signup">
                                     Signup
                                 </Link>
-                                <span className="mobilMenu">
-                                    <i></i>
-                                </span>
+                                <div class="dropdown">
+                                    <button class="dropbtn"><AiOutlineMenu style={{ width: 20, height: 20 }} /></button>
+                                    <div class="dropdown-content">
+                                        <Link to="/abstract"><a className='linknav'  >Abstract</a></Link>
+                                        <Link to="/mining"><a className='linknav'  >Mining</a></Link>
+                                        <Link to="/preview"><a className='linknav'  >Withdrawals</a></Link>
+                                        <Link to="/about"><a className='linknav'  >About</a></Link>
+                                        <Link to="/referal"><a className='linknav'  >Referal</a></Link>
+                                        <Link to="/bonus"><a className='linknav'  >Bonus</a></Link>
+                                        <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
+                                    </div>
+                                </div>
                             </div>
                         </header>
                         {/* main content of abstract page  */}
@@ -98,7 +110,7 @@ export default function Abstract() {
                                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
                                         <h3>Welcome</h3>
                                         <p>Fill this form to complete your kyc in few minutes </p>
-                                       
+
                                         <br />
                                     </div>
                                     <div className="col-md-9 register-right">

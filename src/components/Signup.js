@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import { AiOutlineMenu } from 'react-icons/ai';
+import { TbHome } from 'react-icons/tb';
 export default function Signup() {
   const [Name, setName] = useState("");
   const [surname, setSurname] = useState("");
@@ -134,9 +136,18 @@ export default function Signup() {
                 <Link className="signup" to="/signup">
                   Signup
                 </Link>
-                <span className="mobilMenu">
-                  <i></i>
-                </span>
+                <div class="dropdown">
+                  <button class="dropbtn"><AiOutlineMenu style={{ width: 20, height: 20 }} /></button>
+                  <div class="dropdown-content">
+                    <Link to="/abstract"><a className='linknav'  >Abstract</a></Link>
+                    <Link to="/mining"><a className='linknav'  >Mining</a></Link>
+                    <Link to="/preview"><a className='linknav'  >Withdrawals</a></Link>
+                    <Link to="/about"><a className='linknav'  >About</a></Link>
+                    <Link to="/referal"><a className='linknav'  >Referal</a></Link>
+                    <Link to="/bonus"><a className='linknav'  >Bonus</a></Link>
+                    <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
+                  </div>
+                </div>
               </div>
             </header>
             {/* main content of login page  */}
