@@ -79,6 +79,12 @@ export default function Abstract() {
                                             <a className="linknav">Bonus</a>
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
+
+                                    </li>
+
+
                                 </ul>
                             </nav>
                             <div className="form-button">

@@ -1,0 +1,38 @@
+ .btncardx {
+     display: flex;
+     justify-content: flex-end;
+
+ }
+
+ .eBtn {
+     background-color: #11a84e;
+     color: #fff;
+     border: 1px;
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-width: 62px;
+     min-height: 21px;
+     padding: 7px 6px;
+     border-radius: 4px;
+     font-size: 18px;
+     font-family: Roboto, sans-serif;
+     font-weight: 400;
+     cursor: pointer;
+ }
+
+ .uInfo {
+     width: 100%;
+ }
+
+ .UserData {
+     margin-top: 10px;
+     font-size: 18px;
+     text-align: left;
+     font-weight: 500;
+ }
+
+ .outermaincardd {
+     margin: 50px auto;
+ }
