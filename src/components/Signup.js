@@ -39,7 +39,7 @@ export default function Signup() {
   }
 
   async function PostData() {
-    const res = await axios.post('http://localhost:4000/api/v1/register', {
+    const res = await axios.post('https://news.chatvait.com/api/v1/register', {
       full_name: full_name,
       title: title,
       username: username,
@@ -51,7 +51,7 @@ export default function Signup() {
       console.log(res.data);
       Swal.fire(
         'Good job!',
-        'You clicked the button!',
+        'Account Created ',
         'success'
       )
     }).catch((error) => {
@@ -139,9 +139,9 @@ export default function Signup() {
                   </li>
                   <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
                   <li>
-                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+                    <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
 
-                                    </li>
+                  </li>
 
                 </ul>
               </nav>
@@ -162,7 +162,7 @@ export default function Signup() {
                     <Link to="/referal"><a className='linknav'  >Referal</a></Link>
                     <Link to="/bonus"><a className='linknav'  >Bonus</a></Link>
                     <Link to="/kyc"><a className='linknav'  >Kyc</a></Link>
-                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
+                    <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
 
                   </div>
                 </div>

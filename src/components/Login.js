@@ -26,7 +26,7 @@ export default function Login() {
   const [password, setPassword] = useState("")
 
   const PostData = () => {
-    const response = axios.post('http://localhost:4000/api/v1/login', {
+    const response = axios.post('https://news.chatvait.com/api/v1/login', {
       email: email,
       password: password
     })
