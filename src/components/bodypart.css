@@ -4997,3 +4997,9 @@ footer>div.link a:nth-of-type(1) {
 .loginpage-getLink>div.title>form>div.btn button:hover span {
   color: #11a84e;
 }
+
+.submit-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}

@@ -12,7 +12,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-export default function Userprofile() {
+export default function EditUser() {
     // const name = "Harsh"
     // console.log(name);
     return (
@@ -140,28 +140,66 @@ export default function Userprofile() {
                                     </div>
                                 </CardContent>
                                 <CardActions className="btncardx">
-                                    <Link to="/edituser"><button className="eBtn">Edit</button></Link>
+                                    {/* <button className="eBtn">Edit</button> */}
 
                                 </CardActions>
                             </Card>
                             <div className="info">
-                                <h1>Profile</h1>
-                                <p>
-                                    The Tron infinite project is design as a burn strategy to help
-                                    the Tron community burn the numerous supply of Tron on its
-                                    Blockchain, everyone who has access Tron coin globally will be
-                                    privilege to experience a rapid Tron growth as a result of
-                                    this mining farm establishment across Asian, India and other
-                                    part of the world. Pays miners upto 5% daily on mining
-                                    hashpower these funds are invested directly into the
-                                    acquisition of new mining hard wares and alternative power
-                                    supply to the mining farm, thereby ensuring that the Tron
-                                    Blockchain moves from POS to altimate POW as rewards are
-                                    claimed on daily basis. The Tron infinite farm has paid out
-                                    millions of dollars since it's creations and it's growing
-                                    rapidly around the world to ensure that more countries and
-                                    continents have access to the hardware mining systems...
-                                </p>
+                                <div>
+                                    <div className="contact-form-wrapper d-flex justify-content-center">
+                                        <form action="#" className="contact-form">
+                                            <h5 className="title">Edit Profile</h5>
+                                            <p className="description">
+                                                you can edit your profile easily by filling this form. You can do it any time
+                                            </p>
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    className="form-control rounded border-white mb-3 form-input"
+                                                    id="name"
+                                                    placeholder="Name"
+                                                    required=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <input
+                                                    type="email"
+                                                    className="form-control rounded border-white mb-3 form-input"
+                                                    placeholder="Email"
+                                                    required=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <input
+                                                    type="passowrd"
+                                                    className="form-control rounded border-white mb-3 form-input"
+                                                    placeholder="password"
+                                                    required=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <input
+                                                    type="passowrd"
+                                                    className="form-control rounded border-white mb-3 form-input"
+                                                    placeholder="Confirm password"
+                                                    required=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <input
+                                                    type="file"
+                                                    className="form-control rounded border-white mb-3 form-input"
+                                                    placeholder="image"
+                                                    required=""
+                                                />
+                                            </div>
+
+                                            <div className="submit-button-wrapper">
+                                                <input type="submit" className="eBtn" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

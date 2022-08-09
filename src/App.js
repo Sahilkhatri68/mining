@@ -17,6 +17,7 @@ import Termsandcondition from './components/Termsofuse';
 import Mining from './components/Mining';
 import Kyc from './components/Kyc/Kyc';
 import Userprofile from './components/Profile/Userprofile';
+import EditUser from './components/Profile/EditUser';
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,7 @@ function App() {
         <Route path="/terms" element={<Termsandcondition />} />
         <Route path="/kyc" element={<Kyc />} />
         <Route path="/userprofile" element={<Userprofile />} />
+        <Route path="/edituser" element={<EditUser />} />
       </Routes>
 
     </div>
