@@ -567,7 +567,7 @@ body::-webkit-scrollbar-track {
   border-radius: 6px;
   /* margin-top: 10px; */
   margin-left: 14px;
-  /* display: none; */
+  display: none;
 }
 
 
@@ -608,10 +608,18 @@ body::-webkit-scrollbar-track {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-.homeiconn{
+
+.homeiconn {
   width: 25px;
   height: 25px;
 }
+
+@media(max-width:1070px) {
+  .dropbtn {
+    display: block;
+  }
+}
+
 header {
   padding: 30px;
 
