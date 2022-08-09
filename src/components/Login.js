@@ -121,12 +121,12 @@ export default function Login() {
                     </Link>
                   </li>
                   <li><Link to="/kyc"><a className='linknav'  >Kyc</a></Link></li>
+                  <li>
+                    <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
 
+                  </li>
                 </ul>
-                <li>
-                                        <Link to="/userprofile"><a className='linknav'  ><BiUserCircle className="usercirclediv" /></a></Link>
 
-                                    </li>
               </nav>
               <div className="form-button">
                 <Link className="login" to="/login">
