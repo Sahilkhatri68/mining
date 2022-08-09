@@ -3,12 +3,12 @@ import "./bodypart.css";
 import { useState, useEffect } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import Swal from "sweetalert2"
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb';
 export default function Signup() {
-  const [Name, setName] = useState("");
-  const [surname, setSurname] = useState("");
+  const [full_name, setFull_name] = useState("");
+  const [title, setTitle] = useState("")   //title is surname 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,19 +37,29 @@ export default function Signup() {
   }
 
   async function PostData() {
-    const res = await axios.post('https://61c59aa5c003e70017b797e7.mockapi.io/employee', {
-      Name: Name,
-      surname: surname,
+    const res = await axios.post('http://localhost:4000/api/v1/register', {
+      full_name: full_name,
+      title: title,
       username: username,
       email: email,
       phone: phone,
       password: password,
-      gender: gender
 
     }).then((res) => {
       console.log(res.data);
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
     }).catch((error) => {
       console.log(error)
+      Swal.fire({
+        icon: 'error',
+
+        text: 'Details Missing / User Already exist',
+
+      })
     })
   }
 
@@ -160,8 +170,8 @@ export default function Signup() {
                     placeholder="Your name"
                     // id="login-email"
                     type="text"
-                    name={Name}
-                    onChange={(e) => setName(e.target.value)}
+                    name={full_name}
+                    onChange={(e) => setFull_name(e.target.value)}
                     required
                   />
                 </div>
@@ -171,8 +181,8 @@ export default function Signup() {
                     placeholder="Your name"
                     // id="login-email"
                     type="text"
-                    name={surname}
-                    onChange={(e) => setSurname(e.target.value)}
+                    name={title}
+                    onChange={(e) => setTitle(e.target.value)}
                     required
                   />
                 </div>
@@ -215,7 +225,7 @@ export default function Signup() {
                     // id="login-password"
                     type="text"
                     name={phone}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
                 <div className="info">
