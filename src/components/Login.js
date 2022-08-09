@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "./bodypart.css";
 import {
@@ -7,10 +7,45 @@ import {
   Link,
 
 } from "react-router-dom";
-
+import Swal from "sweetalert2"
 import { AiOutlineMenu } from 'react-icons/ai';
 import { TbHome } from 'react-icons/tb'
+import axios from 'axios';
 export default function Login() {
+  const handleSubmit = event => {
+    // 👇️ prevent page refresh
+    event.preventDefault();
+
+    console.log('form submitted ✅');
+  };
+
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("")
+
+  const PostData = () => {
+    const response = axios.post('http://localhost:4000/api/v1/login', {
+      email: email,
+      password: password
+    })
+      .then(function (response) {
+        console.log(response);
+        Swal.fire(
+          'Good job!',
+          'Login Success',
+          'success'
+        )
+      })
+      .catch(function (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Details Missing / Invalid Details',
+
+        })
+        console.log(error);
+      });
+  }
+
 
   return (
     <div className="body">
@@ -110,7 +145,7 @@ export default function Login() {
             </header>
             {/* main content of login page  */}
             <div className="loginpage">
-              <form method="post">
+              <form onSubmit={handleSubmit}>
                 <input type="hidden" name="_token" />
                 <div className="field">
                   <label>E-mail</label>
@@ -118,7 +153,8 @@ export default function Login() {
                     placeholder="Your email"
                     id="login-email"
                     type="email"
-                    name="email"
+                    name={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -128,12 +164,13 @@ export default function Login() {
                     placeholder="Your password"
                     id="login-password"
                     type="password"
-                    name="password"
+                    name={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>
                 <div className="btn">
-                  <button type="submit">
+                  <button onClick={PostData}>
                     <span>
                       Login
                       <br />

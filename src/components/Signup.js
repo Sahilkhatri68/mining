@@ -17,19 +17,19 @@ export default function Signup() {
 
   const [gender, setGender] = useState("");
 
-  async function GetData() {
-    const resp = await axios
-      .get(`https://61c59aa5c003e70017b797e7.mockapi.io/employee`)
-      .then((resp) => {
-        console.log(resp.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
-  useEffect(() => {
-    GetData();
-  });
+  // async function GetData() {
+  //   const resp = await axios
+  //     .get(`https://61c59aa5c003e70017b797e7.mockapi.io/employee`)
+  //     .then((resp) => {
+  //       console.log(resp.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
+  // useEffect(() => {
+  //   GetData();
+  // });
 
   const handleReloading = (e) => {
     e.preventDefault();
