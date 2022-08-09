@@ -61,7 +61,7 @@ export default function Signup() {
           <aside className="sidebar">
             <div className="lang">
               <div className="lang-btn active">
-                <span></span>
+                <TbHome className='homeiconn' />
               </div>
               <div className="item lang-item">
                 <a href="" className="en"></a>
